@@ -1,15 +1,19 @@
 apiVersion: redis.tencentcloud.crossplane.io/v1alpha1
-kind: RedisInstance
+kind: Instance 
 metadata:
   name: my-redis-demo
 spec:
   forProvider:
-    availabilityZone: "ap-hongkong"
+    availabilityZone: "ap-hongkong-2"
     typeId: 8  # 实例类型（8 代表主从版，具体值参考腾讯云文档）
-    memSize: 1024  # 内存大小（MB）
+    memSize: 512  # 内存大小（MB）
     redisShardNum: 1  # 分片数（标准版固定为1）
     redisReplicasNum: 1  # 副本数（标准版为1主1从）
     chargeType: POSTPAID
+    noAuth: true
+    vpcId: "example-cvm-vpc"
+    subnetId: "example-cvm-subnet"
+
 
 
 # CVM instance
