@@ -11,5 +11,5 @@ variable "regoin" {
 }
 
 variable "password" {
-  default = "password123"
+  default = "xxx"
 }
