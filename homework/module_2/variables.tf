@@ -1,9 +1,9 @@
 variable "secret_id" {
-  default = "AKIDvgEZhcJrdJn5QgmhQlx74oKdjpiOvGOL"
+  default = "sss"
 }
 
 variable "secret_key" {
-  default = "pRp0EQQEqO3Xp8IG3d6OTM3hLyQht35y"
+  default = "xxx"
 }
 
 variable "regoin" {
